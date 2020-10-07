@@ -36,8 +36,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RAISE] = LAYOUT(
     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_EQUAL,
     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    XXXXXXX,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    OSM(KC_RALT),
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,          _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    OSM(KC_RSHIFT),
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    OSM(MOD_RALT),
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,          _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    OSM(MOD_RSFT),
                                     KC_LALT, KC_LGUI,  KC_DEL,                   LOWER, XXXXXXX, XXXXXXX
   ),
 
@@ -45,8 +45,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_ADJUST] = LAYOUT(
     KC_F12,  KC_F1,   KC_F2,   KC_F3,    KC_F4,   KC_F5,                              KC_F6,   KC_F7,   KC_F8,   KC_F9,    KC_F10,  KC_F11,
     _______, RGB_TOG, RGB_MOD, RGB_RMOD, XXXXXXX, XXXXXXX,                            KC_TAB,  KC_PGDN, KC_PGUP, XXXXXXX,  XXXXXXX, KC_BSPC,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX,                            KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, XXXXXXX, OSM(KC_RCTRL),
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, _______,          _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, OSM(KC_RSHIFT),
+    _______, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX,                            KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, XXXXXXX, OSM(MOD_RCTL),
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX, _______,          _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, OSM(MOD_RSFT),
                                     XXXXXXX, XXXXXXX, XXXXXXX,                   _______, XXXXXXX, XXXXXXX
   )
 };
